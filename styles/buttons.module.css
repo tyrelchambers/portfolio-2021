@@ -1,0 +1,13 @@
+.wrapper {
+  min-width: fit-content;
+  width: 100%;
+  max-width: 300px;
+  background: rgb(52, 211, 153);
+  border-radius: 5px;
+  padding: 1em 0;
+  transition: all 0.2s ease;
+}
+
+.wrapper:hover {
+  transform: scale(0.98);
+}

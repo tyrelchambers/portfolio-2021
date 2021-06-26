@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Header from "../layouts/Header/Header";
 import { MainBtn } from "../components/Buttons/Buttons";
 import styles from "../styles/headings.module.css";
 import NavLink from "../components/NavLink/NavLink";
 import Link from "next/link";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Socials from "../components/Socials/Socials";
+import Hero from "../components/Hero/Hero";
+import Wrapper from "../layouts/Wrapper/Wrapper";
+import Footer from "../layouts/Footer/Footer";
 export default function Home() {
   const projects = [
     {
@@ -59,7 +60,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="flex flex-col ml-auto mr-auto p-2">
+    <Wrapper>
       <Head>
         <title>Tyrel Chambers</title>
         <link rel="icon" href="/favicon.ico" />
@@ -70,20 +71,17 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="hero relative flex flex-col items-center p-6 pb-12 bg-gray-900">
-        <div className="hero-body max-w-screen-lg w-full">
-          <Header />
-          <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
-            Establish your online presence{" "}
-            <span className="font-black text-green-400">
-              without worrying about the details
-            </span>
-          </h1>
-          <a href="mailto:tychambers3@gmail.com?subject=Hey There!">
-            <MainBtn className="mt-12 shadow-lg">Find out how</MainBtn>
-          </a>
-        </div>
-      </div>
+      <Hero>
+        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+          Establish your online presence{" "}
+          <span className="font-black text-green-400">
+            without worrying about the details
+          </span>
+        </h1>
+        <a href="mailto:tychambers3@gmail.com?subject=Hey There!">
+          <MainBtn className="mt-12 shadow-lg">Find out how</MainBtn>
+        </a>
+      </Hero>
 
       <section className="max-w-screen-lg ml-auto mr-auto w-full mt-20">
         <h1 className={styles.h1}>It's Nice to Meet You...</h1>
@@ -149,25 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="hero relative flex flex-col items-center py-12 p-6 pb-12 bg-gray-900 mt-20">
-        <div className="max-w-screen-lg flex flex-col ">
-          <p className="text-gray-200 text-2xl font-thin text-center flex flex-col">
-            <span className="text-green-400 font-bold text-5xl">
-              Send me an email
-            </span>
-            and let's get started on building you a website.
-          </p>
-          <a
-            href="mailto:tychambers3@gmail.com?subject=Hey there!"
-            className="flex justify-center"
-          >
-            <MainBtn className="mt-12 shadow-lg w-full">Let's chat</MainBtn>
-          </a>
-          <div className="mt-20 flex justify-center">
-            <Socials />
-          </div>
-        </div>
-      </footer>
-    </div>
+      <Footer />
+    </Wrapper>
   );
 }

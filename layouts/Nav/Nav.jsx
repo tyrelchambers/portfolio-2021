@@ -16,6 +16,12 @@ const Nav = () => {
       >
         About
       </NavLink>
+      <NavLink
+        href="/services"
+        className="text-white opacity-70 hover:opacity-100 transition-all"
+      >
+        How I can help
+      </NavLink>
     </nav>
   );
 };

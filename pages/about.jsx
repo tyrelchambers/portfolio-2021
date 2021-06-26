@@ -1,10 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../layouts/Header/Header";
 import styles from "../styles/headings.module.css";
+import Hero from "../components/Hero/Hero";
+import Wrapper from "../layouts/Wrapper/Wrapper";
+import Footer from "../layouts/Footer/Footer";
 const about = () => {
   return (
-    <div className="flex flex-col ml-auto mr-auto p-2">
+    <Wrapper>
       <Head>
         <title>Tyrel Chambers | About</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,15 +18,13 @@ const about = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="hero relative flex flex-col items-center p-6 pb-12 bg-gray-900">
-        <div className="hero-body max-w-screen-lg w-full">
-          <Header />
-          <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
-            Hi, my name is,
-            <span className="font-black text-green-400">Tyrel Chambers</span>
-          </h1>
-        </div>
-      </div>
+      <Hero>
+        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+          Hi, my name is,
+          <span className="font-black text-green-400">Tyrel Chambers</span>
+        </h1>
+      </Hero>
+
       <div className="max-w-screen-lg mt-20 ml-auto mr-auto w-full">
         <div className="flex gap-10">
           <img
@@ -85,7 +85,8 @@ const about = () => {
           />
         </div>
       </div>
-    </div>
+      <Footer />
+    </Wrapper>
   );
 };
 

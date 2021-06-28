@@ -111,7 +111,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="h-96 overflow-hidden max-w-screen-lg ml-auto mr-auto w-full flex items-center mt-20  ">
+      <section className="h-96 overflow-hidden max-w-screen-lg ml-auto mr-auto w-full rounded-lg flex items-center mt-20  ">
         <img
           src="/mtn.jpeg"
           className="w-full object-cover rounded-lg"

@@ -1,10 +1,13 @@
+:root {
+  --green-500: rgb(16, 185, 129);
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 .link {
   display: flex;
-  flex-direction: column;
   transition: all 0.2s ease;
 }
 
@@ -24,4 +27,114 @@ body {
 
 .project-gradient {
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.toggle-wrapper {
+  position: fixed;
+  top: 2.5em;
+  right: 2.5em;
+  z-index: 99;
+  gap: 0.25em;
+  transform: rotateZ(180deg);
+}
+
+.toggle-wrapper .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.toggle-wrapper.open .arrow {
+  background-color: var(--green-500) !important;
+}
+
+.toggle-wrapper .white {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.toggle-wrapper:hover .arrow {
+  background-color: var(--green-500);
+}
+
+.toggle-wrapper.open .white {
+  opacity: 1;
+  background-color: rgb(224, 224, 224);
+}
+
+.mobile-nav-wrapper {
+  position: fixed;
+  left: -100%;
+  z-index: 98;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  overflow-y: auto;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.98);
+}
+.mobile-nav-wrapper.open {
+  left: 0px;
+  top: 0;
+  width: 75%;
+}
+
+.toggle-wrapper .arrow {
+  background-color: var(--green-500);
+}
+
+.mobile-nav {
+  height: 100vh;
+}
+
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.mobile-nav-item a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.mobile-nav-item:hover a {
+  color: var(--green-500);
+  transition: all 0.2s ease;
+}
+
+@media screen and (min-width: 426px) {
+  .mobile-nav-wrapper {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mobile-nav-wrapper {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grid-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav {
+    display: none;
+  }
+  .toggle-wrapper {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .toggle-wrapper {
+    display: none;
+  }
 }

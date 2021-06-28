@@ -3,7 +3,7 @@ import NavLink from "../../components/NavLink/NavLink";
 
 const Nav = () => {
   return (
-    <nav className="flex gap-6">
+    <nav className="flex gap-6 nav">
       <NavLink
         href="/"
         className="text-white opacity-70 hover:opacity-100 transition-all"

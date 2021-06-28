@@ -36,7 +36,7 @@ const services = () => {
       <div className="max-w-screen-lg w-full ml-auto mr-auto mt-20">
         <h1 className={styles.h1}>Are you a:</h1>
 
-        <div className="grid grid-cols-3 mt-14 gap-14">
+        <div className="grid grid-cols-3 mt-14 gap-14 grid-list">
           <div className="flex flex-col">
             <FontAwesomeIcon
               icon={faMusic}

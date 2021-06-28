@@ -26,7 +26,7 @@ const about = () => {
       </Hero>
 
       <div className="max-w-screen-lg mt-20 ml-auto mr-auto w-full">
-        <div className="flex gap-10">
+        <div className="flex flex-col sm:flex-row gap-10">
           <img
             src="/me.jpg"
             alt=""
@@ -64,7 +64,7 @@ const about = () => {
           </div>
         </div>
 
-        <div className="mt-20 flex">
+        <div className="mt-20 flex flex-col-reverse sm:flex-row gap-10">
           <div className="flex flex-col">
             <h1 className={styles.h1}>I love taking photos!</h1>
             <p className="text-gray-500 mt-2 font-thin max-w-2xl text-lg">

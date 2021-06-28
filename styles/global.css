@@ -61,7 +61,7 @@ body {
 
 .toggle-wrapper.open .white {
   opacity: 1;
-  background-color: rgb(224, 224, 224);
+  background-color: white;
 }
 
 .mobile-nav-wrapper {
@@ -115,6 +115,9 @@ body {
 @media screen and (max-width: 425px) {
   .mobile-nav-wrapper {
     width: 100vw;
+  }
+  .hero-title {
+    font-size: 8vw;
   }
 }
 

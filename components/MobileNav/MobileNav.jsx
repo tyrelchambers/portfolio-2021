@@ -59,7 +59,7 @@ const MobileNav = () => {
               icon={faUserAstronaut}
               className="mr-4 text-gray-700"
             />{" "}
-            Home About
+            About
           </NavLink>
           <NavLink
             href="/services"

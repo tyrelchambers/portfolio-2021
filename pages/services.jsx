@@ -72,7 +72,7 @@ const services = () => {
               size="2x"
             />
             <h3 className="font-bold  text-gray-700 text-2xl my-4">
-              Content Creators
+              Content Creator
             </h3>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               You could be a Youtuber, Twitch streamer, or somewhere in between.

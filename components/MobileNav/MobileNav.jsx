@@ -66,7 +66,7 @@ const MobileNav = () => {
             className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
           >
             <FontAwesomeIcon icon={faSmile} className="mr-4 text-gray-700" />{" "}
-            Home How I can help
+            How I can help
           </NavLink>
         </nav>
       </div>

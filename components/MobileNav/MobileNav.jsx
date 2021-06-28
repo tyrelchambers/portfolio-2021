@@ -43,7 +43,7 @@ const MobileNav = () => {
       <div
         className={`mobile-nav-wrapper relative light ${isOpen ? "open" : ""}`}
       >
-        <nav className="mobile-nav p-4">
+        <nav className="mobile-nav p-4 mt-10">
           <NavLink
             href="/"
             className="text-gray-600 flex items-center  opacity-100 transition-all text-xl mb-10"

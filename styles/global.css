@@ -67,7 +67,7 @@ body {
 .mobile-nav-wrapper {
   position: fixed;
   left: -105%;
-  z-index: 98;
+  z-index: 99;
   top: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;

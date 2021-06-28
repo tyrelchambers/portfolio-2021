@@ -32,7 +32,7 @@ const Socials = () => {
       {socials.map((s) => (
         <Link href={s.url}>
           <a
-            className="text-white text-xl"
+            className="text-gray-700 text-xl"
             target="_blank"
             rel="noreferrer noopener"
           >

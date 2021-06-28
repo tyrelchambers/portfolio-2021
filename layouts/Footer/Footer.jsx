@@ -3,9 +3,9 @@ import { MainBtn } from "../../components/Buttons/Buttons";
 import Socials from "../../components/Socials/Socials";
 const Footer = () => {
   return (
-    <footer className="hero relative flex flex-col items-center py-12 p-6 pb-12 bg-gray-900 mt-20">
+    <footer className="hero relative flex flex-col items-center py-12 p-6 pb-12 bg-gray-50 mt-20">
       <div className="max-w-screen-lg flex flex-col ">
-        <p className="text-gray-200 text-2xl font-thin text-center flex flex-col">
+        <p className="text-gray-600 text-2xl font-thin text-center flex flex-col">
           <span className="text-green-400 font-bold text-5xl">
             Send me an email
           </span>

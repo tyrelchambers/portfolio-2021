@@ -27,7 +27,7 @@ const post = ({ content, frontmatter }) => {
         </h1>
         <p className="text-green-500 font-bold">{frontmatter.updatedAt}</p>
       </Hero>
-      <article className="prose ml-auto mr-auto mt-10 prose-blue">
+      <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
         <ReactMarkdown children={content} />
       </article>
     </Wrapper>

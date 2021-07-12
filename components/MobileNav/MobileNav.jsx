@@ -1,5 +1,6 @@
 import {
   faHome,
+  faPen,
   faSmile,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
@@ -46,14 +47,14 @@ const MobileNav = () => {
         <nav className="mobile-nav p-4 mt-10">
           <NavLink
             href="/"
-            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl mb-10"
+            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
           >
             <FontAwesomeIcon icon={faHome} className="mr-4 text-gray-700" />{" "}
             Home
           </NavLink>
           <NavLink
             href="/about"
-            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl mb-10"
+            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
           >
             <FontAwesomeIcon
               icon={faUserAstronaut}
@@ -67,6 +68,12 @@ const MobileNav = () => {
           >
             <FontAwesomeIcon icon={faSmile} className="mr-4 text-gray-700" />{" "}
             How I can help
+          </NavLink>
+          <NavLink
+            href="/blog"
+            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
+          >
+            <FontAwesomeIcon icon={faPen} className="mr-4 text-gray-700" /> Blog
           </NavLink>
         </nav>
       </div>

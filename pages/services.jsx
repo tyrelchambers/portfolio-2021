@@ -22,9 +22,9 @@ const services = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;700&family=Roboto:wght@300;400;700;900&display=swap"
           rel="stylesheet"
-        />
+        ></link>
       </Head>
       <Hero>
         <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
@@ -33,9 +33,7 @@ const services = () => {
         </h1>
       </Hero>
 
-      <div className="max-w-screen-lg w-full ml-auto mr-auto mt-20">
-        <h1 className={styles.h1}>Are you a:</h1>
-
+      <div className="max-w-screen-lg w-full ml-auto mr-auto mt-10">
         <div className="grid grid-cols-3 mt-14 gap-14 grid-list">
           <div className="flex flex-col">
             <FontAwesomeIcon

@@ -2,8 +2,22 @@
   --green-500: rgb(16, 185, 129);
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+h3 a {
+  font-family: "Playfair Display", serif;
+}
+
+p,
+a {
+  font-family: "Quicksand", sans-serif;
 }
 
 .link {

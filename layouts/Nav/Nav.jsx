@@ -22,6 +22,12 @@ const Nav = () => {
       >
         How I can help
       </NavLink>
+      <NavLink
+        href="/blog"
+        className="text-white opacity-70 hover:opacity-100 transition-all"
+      >
+        Blog
+      </NavLink>
     </nav>
   );
 };

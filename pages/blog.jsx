@@ -24,38 +24,45 @@ const blog = ({ posts }) => {
         </h1>
       </Hero>
       <div className="max-w-screen-lg ml-auto mr-auto w-full mt-10">
-        {posts.map(
-          ({ frontmatter: { title, description, updatedAt, tags }, slug }) => (
-            <article key={title} className="mb-10 flex w-full max-w-2xl">
-              <div className="flex flex-col">
-                <header className="flex items-center gap-6">
-                  <h3>
-                    <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
-                      <a className="text-2xl font-bold text-indigo-500">
-                        {title}
-                      </a>
-                    </Link>
-                  </h3>
-                </header>
-                <section className="mt-2">
-                  <p className="text-gray-500">{description}</p>
-                  {tags.length > 0 && (
-                    <span className="flex gap-4 mt-4">
-                      {tags.map((t) => (
-                        <p className="uppercase text-xs border-2 border-green-500 text-green-500 py-1 px-3 rounded-full font-bold">
-                          {t}
-                        </p>
-                      ))}
-                    </span>
-                  )}
-                  <div className="text-gray-500 italic mt-2 text-sm">
-                    {updatedAt}
-                  </div>
-                </section>
-              </div>
-            </article>
+        {posts
+          .sort((a, b) =>
+            a.frontmatter.updatedAt > b.frontmatter.updatedAt ? -1 : 1
           )
-        )}
+          .map(
+            ({
+              frontmatter: { title, description, updatedAt, tags },
+              slug,
+            }) => (
+              <article key={title} className="mb-10 flex w-full max-w-2xl">
+                <div className="flex flex-col">
+                  <header className="flex items-center gap-6">
+                    <h3>
+                      <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
+                        <a className="text-2xl font-bold text-indigo-500">
+                          {title}
+                        </a>
+                      </Link>
+                    </h3>
+                  </header>
+                  <section className="mt-2">
+                    <p className="text-gray-500">{description}</p>
+                    {tags.length > 0 && (
+                      <span className="flex gap-4 mt-4">
+                        {tags.map((t) => (
+                          <p className="uppercase text-xs border-2 border-green-500 text-green-500 py-1 px-3 rounded-full font-bold">
+                            {t}
+                          </p>
+                        ))}
+                      </span>
+                    )}
+                    <div className="text-gray-500 italic mt-2 text-sm">
+                      {updatedAt}
+                    </div>
+                  </section>
+                </div>
+              </article>
+            )
+          )}
       </div>
     </Wrapper>
   );

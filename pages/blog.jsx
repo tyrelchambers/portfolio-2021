@@ -87,7 +87,7 @@ export async function getStaticProps() {
     };
 
     return {
-      slug: filename.replace(".mdx", ""),
+      slug: filename.replace(".md", ""),
       frontmatter,
     };
   });

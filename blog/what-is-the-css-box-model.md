@@ -23,7 +23,7 @@ The red area represents the padding being applied to our content.
 
 ## Border
 
-The border is the next layer that sits on top of our padding area, but underneath our margin.
+The border is the next layer that sits on top of our padding area, but underneath our margin as show by the green line.
 
 <div style={{ padding: "10px", backgroundColor: "tomato", border: "5px solid green" }}>
   <p style={{ backgroundColor: "white" }}>content</p>
@@ -31,7 +31,7 @@ The border is the next layer that sits on top of our padding area, but underneat
 
 ## Margin
 
-The last property in our CSS box model is the margin. It adds space to the external area of an element whereas padding adds space to the internal space. The border can be though of the dividing line between the two.
+The last property in our CSS box model is the margin represented by the teal area. It adds space to the external area of an element whereas padding adds space to the internal space. The border can be though of the dividing line between the two.
 
 <div style={{ backgroundColor: "cyan", display: "flex", alignItems: "center", justifyContent: "center" }}>
   <div style={{ padding: "10px", width: "100%", backgroundColor: "tomato", border: "5px solid green", margin: "10px",  }}>

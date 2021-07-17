@@ -25,12 +25,13 @@ const blog = ({ posts }) => {
       </Hero>
       <div className="max-w-screen-lg ml-auto mr-auto w-full mt-10">
         {posts
+          .filter((p) => p.frontmatter.draft !== true)
           .sort((a, b) =>
             a.frontmatter.updatedAt > b.frontmatter.updatedAt ? -1 : 1
           )
           .map(
             ({
-              frontmatter: { title, description, updatedAt, tags },
+              frontmatter: { title, description, updatedAt, tags, draft },
               slug,
             }) => (
               <article key={title} className="mb-10 flex w-full max-w-2xl">

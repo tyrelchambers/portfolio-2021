@@ -5,7 +5,11 @@
   tags: immutability,beginner,javascript
 ---
 
-Immutability means that the value or data structure given to a variable cannot change. This immutability only applies to `arrays` and `objects` because of how they are stored in memory. As opposed to primitive data types, `objects` and `arrays` are composite (or reference) data types. Composite data types point to the same location.
+Immutability means that a value or data structure cannot change. Explaining what is mutable(values that can be changed) and what is immutable(values that cannot be changed) can be tricky so let me try to sum it up the best I can.
+
+## Mutability and Reference Types
+
+First let me give a brief explanation of mutability and how reference data types are affected. Immutability only applies to arrays and objects because of how they are stored in memory for JavaScript. As opposed to primitive data types, objects and arrays are composite (or reference) data types. A composite data type in JavaScript has multiple values, which are grouped together. Composite data types point to the same location.
 
 You can think of reference data types like this. Let's look at the following diagram created with the most advanced design techniques known to man.
 
@@ -39,15 +43,32 @@ obj2.name = "Steven";
 
 any object also referencing `obj1`, would have their values changed as well. It's like having an easter egg basket in front of two people. We are both interacting with that basket, eating the eggs (probably Cadbury) and painting them. That basket represents the object in memory and the eggs within it are its properties. If I colour an egg or destroy one, my friend will also have his destroyed or modified because we are looking at the same thing.
 
+If you were to copy a primitive data type in this way:
+
+```
+let a = 1
+let b = a
+```
+
 If you were to copy a primitive data type in this way, you would literally take the value `let a = 1` and copy it. `let b = a` would create a direct copy which means that `let b` would equal `1` because they become two separate entities rather than pointing to the same value in memory. If you were to then change `b` to `b = 2`, `b` would equal `2` and not `1`.
 
-Now that is a brief explanation of mutability and how reference data types are affected.
+```
+let a = 1
+let b = a
+console.log(“variable a:“, a) // 1
+console.log(“variable b:“, b) // 1
+b = 2
+console.log(“variable a:“, a) // 1
+console.log(“variable b:“, b) // 2
+```
+
+## Immutability
 
 Immutability means that everything I explained is not possible. It saves any headaches caused by accidently changing an existing object.
 
-## How do we make an object immutable?
+### How do we make an object immutable?
 
-### Object.freeze()
+#### Object.freeze()
 
 `Object.freeze()` prevents any changes to an object. If you create an object and run `Object.freeze(myObject)`, you won't be able to change, add or remove any properties within.
 

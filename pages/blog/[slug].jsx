@@ -5,9 +5,14 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Wrapper from "../../layouts/Wrapper/Wrapper";
 import Hero from "../../components/Hero/Hero";
-import ReactMarkdown from "react-markdown";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
-const post = ({ content, frontmatter }) => {
+const components = {
+  h1: (props) => <h1 style={{ color: "tomato" }} {...props} />,
+};
+
+const post = ({ source, frontmatter }) => {
   return (
     <Wrapper>
       <Head>
@@ -28,7 +33,7 @@ const post = ({ content, frontmatter }) => {
         <p className="text-green-500 font-bold">{frontmatter.updatedAt}</p>
       </Hero>
       <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
-        <ReactMarkdown children={content} />
+        <MDXRemote {...source} components={components} />
       </article>
     </Wrapper>
   );
@@ -39,7 +44,7 @@ export async function getStaticPaths() {
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace(".mdx", ""),
+      slug: filename.replace(".md", ""),
     },
   }));
 
@@ -51,11 +56,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMetadata = fs
-    .readFileSync(path.join("blog", slug + ".mdx"))
+    .readFileSync(path.join("blog", slug + ".md"))
     .toString();
 
   const { data, content } = matter(markdownWithMetadata);
-
+  const mdxSource = await serialize(content);
   // Convert post date to format: Month day, Year
   const options = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = data.updatedAt.toLocaleDateString("en-US", options);
@@ -69,7 +74,7 @@ export async function getStaticProps({ params: { slug } }) {
 
   return {
     props: {
-      content: `# ${data.title}\n${content}`,
+      source: mdxSource,
       frontmatter,
     },
   };

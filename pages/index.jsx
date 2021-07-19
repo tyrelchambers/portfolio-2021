@@ -25,6 +25,11 @@ export default function Home() {
       url: "https://kanlen.ca",
     },
     {
+      title: "Alysha Kyle",
+      summary: "Built for Alysha Kyle. A Peterborough musical artist.",
+      url: "https://alysha-kyle.vercel.app",
+    },
+    {
       title: "Packagr",
       summary: "Create and modify your next package.json",
       url: "https://packager-gamma.vercel.app/",

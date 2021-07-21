@@ -75,6 +75,10 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap"
           rel="stylesheet"
         ></link>
+        <meta
+          name="description"
+          content="Web developer from Peterborough, Ontario. Let's connect!"
+        />
       </Head>
       <Hero>
         <p className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">

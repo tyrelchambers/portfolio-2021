@@ -10,6 +10,10 @@ const blog = ({ posts }) => {
     <Wrapper>
       <Head>
         <title>Tyrel Chambers | Blog</title>
+        <meta
+          name="description"
+          content="Learn web development fundamentals."
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

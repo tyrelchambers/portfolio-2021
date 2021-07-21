@@ -10,6 +10,10 @@ const about = () => {
       <Head>
         <title>Tyrel Chambers | About</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="I'm a web developer from Peterborough, Ontario. I can work on design and full-stack applications."
+        />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

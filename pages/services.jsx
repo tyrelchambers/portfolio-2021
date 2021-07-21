@@ -16,6 +16,10 @@ const services = () => {
     <Wrapper>
       <Head>
         <title>Tyrel Chambers | Services</title>
+        <meta
+          name="description"
+          content="I can help you build your online presence if you're a small business, photopgraher/videographer, content creator, or musician."
+        />
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />

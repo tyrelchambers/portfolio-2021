@@ -139,7 +139,10 @@ export default function Home() {
 
         <div className="grid grid-cols-2 mt-10 gap-4 gap-y-8 grid-list">
           {projects.map((p) => (
-            <div className="flex w-full bg-gray-50 flex-col  rounded-2xl  relative">
+            <div
+              className="flex w-full bg-gray-50 flex-col  rounded-2xl  relative"
+              key={p.title}
+            >
               <div className="w-full h-20 bg-gray-900 absolute rounded-lg"></div>
               <div className="z-10 mt-6">
                 <img

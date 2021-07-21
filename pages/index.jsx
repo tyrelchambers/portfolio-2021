@@ -77,19 +77,24 @@ export default function Home() {
         ></link>
       </Head>
       <Hero>
-        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+        <p className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
           Establish your online presence{" "}
           <span className="font-black text-green-400">
             without worrying about the details
           </span>
-        </h1>
+        </p>
         <a href="mailto:tychambers3@gmail.com?subject=Hey There!">
           <MainBtn className="mt-12 shadow-lg">Find out how</MainBtn>
         </a>
       </Hero>
-
+      <section className="max-w-screen-lg ml-auto mr-auto w-full">
+        <h1 className="main-title">
+          <span className="text-green-500">Web Developer</span> from
+          Peterborough, Ontario.
+        </h1>
+      </section>
       <section className="max-w-screen-lg ml-auto mr-auto w-full mt-20">
-        <h1 className={styles.h1}>It's Nice to Meet You...</h1>
+        <h2 className={styles.h1}>It's Nice to Meet You...</h2>
         <p className="text-gray-500 mt-2 font-thin max-w-2xl text-lg">
           I'm not into building things I don't believe in. That's all you'll
           find here. Each and every project I've made is something I believe in.
@@ -125,7 +130,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-screen-lg ml-auto mr-auto w-full mt-20">
-        <h1 className={styles.h1}>What I've Done</h1>
+        <h2 className={styles.h1}>What I've Done</h2>
         <p className="text-gray-500 mt-2 font-thin max-w-2xl">
           Solving problems is what I do. Below are some apps I've built in order
           to solve said problems. They range from producitivty/developer apps to
@@ -144,9 +149,9 @@ export default function Home() {
                 />
                 <div className="flex flex-col mt-4  rounded-md p-4">
                   <NavLink href={p.url}>
-                    <h2 className=" text-green-400 font-bold text-2xl underline">
+                    <h3 className=" text-green-400 font-bold text-2xl underline">
                       {p.title}
-                    </h2>
+                    </h3>
                   </NavLink>
                   <p className="text-gray-600 mt-2 font-thin">{p.summary}</p>
                 </div>
@@ -157,6 +162,14 @@ export default function Home() {
       </section>
 
       <Footer />
+
+      <style jsx>{`
+        .main-title {
+          font-size: 3rem;
+          text-align: center;
+          margin-top: 2em;
+        }
+      `}</style>
     </Wrapper>
   );
 }

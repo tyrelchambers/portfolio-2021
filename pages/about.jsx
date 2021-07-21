@@ -21,7 +21,7 @@ const about = () => {
       <Hero>
         <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
           Hi, my name is,
-          <span className="font-black text-green-400">Tyrel Chambers</span>
+          <span className="font-black text-green-400"> Tyrel Chambers</span>
         </h1>
       </Hero>
 
@@ -33,13 +33,10 @@ const about = () => {
             className="object-cover  max-w-md rounded-lg shadow-lg "
           />
           <div className="flex flex-col">
-            <h1 className={styles.h1}>
-              Who is your daddy and what does he do?
-            </h1>
+            <h2 className={styles.h1}>A little about me</h2>
             <p className="text-gray-500 mt-4 font-thin max-w-2xl text-lg">
-              I'm not a dad, but if you've seen kindergarten cop, then you know
-              what I'm talking about! I'm a Web Developer from Peterborough,
-              Ontario and making websites are a passion of mine.
+              I'm a Web Developer from Peterborough, Ontario and making websites
+              are a passion of mine.
             </p>
             <p className="text-gray-500 mt-4 font-thin max-w-2xl text-lg">
               I've been programming on the side since around 2013. It started
@@ -66,7 +63,7 @@ const about = () => {
 
         <div className="mt-20 flex flex-col sm:flex-row gap-10">
           <div className="flex flex-col">
-            <h1 className={styles.h1}>I love taking photos!</h1>
+            <h2 className={styles.h1}>I love taking photos!</h2>
             <p className="text-gray-500 mt-2 font-thin max-w-2xl text-lg">
               You've already seen one of my pictures on the main page of my
               site. I took it in Thunday Bay while hiking the Ouimet Canyon. If

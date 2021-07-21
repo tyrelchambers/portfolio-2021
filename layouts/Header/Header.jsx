@@ -10,7 +10,7 @@ const MobileNav = dynamic(
 const Header = () => {
   return (
     <header className="flex items-center justify-between">
-      <h1 className="text-xl text-gray-200 ">Tyrel Chambers</h1>
+      <p className="text-xl text-gray-200 ">Tyrel Chambers</p>
       <Nav />
       <MobileNav />
     </header>

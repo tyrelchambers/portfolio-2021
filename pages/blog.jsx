@@ -37,13 +37,13 @@ const blog = ({ posts }) => {
               <article key={title} className="mb-10 flex w-full max-w-2xl">
                 <div className="flex flex-col">
                   <header className="flex items-center gap-6">
-                    <h3>
+                    <h2>
                       <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
-                        <a className="text-2xl font-bold text-indigo-500">
+                        <a className="text-2xl font-bold text-gray-800">
                           {title}
                         </a>
                       </Link>
-                    </h3>
+                    </h2>
                   </header>
                   <section className="mt-2">
                     <p className="text-gray-500">{description}</p>

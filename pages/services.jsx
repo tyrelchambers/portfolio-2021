@@ -11,12 +11,11 @@ import React from "react";
 import Hero from "../components/Hero/Hero";
 import Footer from "../layouts/Footer/Footer";
 import Wrapper from "../layouts/Wrapper/Wrapper";
-import styles from "../styles/headings.module.css";
 const services = () => {
   return (
     <Wrapper>
       <Head>
-        <title>Tyrel Chambers | How I can help</title>
+        <title>Tyrel Chambers | Services</title>
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,7 +40,7 @@ const services = () => {
               className="text-green-400 "
               size="2x"
             />
-            <h3 className="font-bold  text-gray-700 text-2xl my-4">Musician</h3>
+            <h2 className="font-bold  text-gray-700 text-2xl my-4">Musician</h2>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               I can help you setup a website for yourself, or your band. This
               will allow you to consolidate all your social links, tour
@@ -55,7 +54,7 @@ const services = () => {
               className="text-green-400 "
               size="2x"
             />
-            <h3 className="font-bold  text-gray-700 text-2xl my-4">Business</h3>
+            <h2 className="font-bold  text-gray-700 text-2xl my-4">Business</h2>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               Are you a small or large business that needs an online presence? I
               can help you. It's crucial to have a website for your company, but
@@ -69,9 +68,9 @@ const services = () => {
               className="text-green-400 "
               size="2x"
             />
-            <h3 className="font-bold  text-gray-700 text-2xl my-4">
+            <h2 className="font-bold  text-gray-700 text-2xl my-4">
               Content Creator
-            </h3>
+            </h2>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               You could be a Youtuber, Twitch streamer, or somewhere in between.
               I can get something set up for you to share with your followers.
@@ -83,9 +82,9 @@ const services = () => {
               className="text-green-400 "
               size="2x"
             />
-            <h3 className="font-bold  text-gray-700 text-2xl my-4">
+            <h2 className="font-bold  text-gray-700 text-2xl my-4">
               Photographer/Videographer
-            </h3>
+            </h2>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               Every photographer or videographer needs a website to show-off
               their work. Let me build you a website to compliment your
@@ -98,9 +97,9 @@ const services = () => {
               className="text-green-400 "
               size="2x"
             />
-            <h3 className="font-bold  text-gray-700 text-2xl my-4">
+            <h2 className="font-bold  text-gray-700 text-2xl my-4">
               Social Media Influencer
-            </h3>
+            </h2>
             <p className="text-gray-500 font-thin max-w-2xl text-lg">
               Your personal brand is the pinnicle of who you are online. Let me
               help you build a website that will help you to advertise without

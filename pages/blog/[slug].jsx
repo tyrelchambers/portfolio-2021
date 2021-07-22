@@ -8,10 +8,6 @@ import Hero from "../../components/Hero/Hero";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 
-const components = {
-  h1: (props) => <h1 style={{ color: "tomato" }} {...props} />,
-};
-
 const post = ({ source, frontmatter }) => {
   return (
     <Wrapper>
@@ -22,7 +18,7 @@ const post = ({ source, frontmatter }) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300&family=Roboto:wght@300;400;700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
@@ -33,7 +29,7 @@ const post = ({ source, frontmatter }) => {
         <p className="text-green-500 font-bold">{frontmatter.updatedAt}</p>
       </Hero>
       <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
-        <MDXRemote {...source} components={components} />
+        <MDXRemote {...source} />
       </article>
     </Wrapper>
   );

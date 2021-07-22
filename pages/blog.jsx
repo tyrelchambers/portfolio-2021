@@ -27,9 +27,14 @@ const blog = ({ posts }) => {
           Blog
         </h1>
       </Hero>
+
       <div className="max-w-screen-lg ml-auto mr-auto w-full mt-10">
         {posts
-          .filter((p) => p.frontmatter.draft !== true)
+          .filter((p) =>
+            process.env.NODE_ENV !== "development"
+              ? p.frontmatter.draft !== true
+              : p
+          )
           .sort((a, b) =>
             a.frontmatter.updatedAt > b.frontmatter.updatedAt ? -1 : 1
           )

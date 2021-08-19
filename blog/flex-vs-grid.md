@@ -1,5 +1,5 @@
 ---
-title: Flex vs. Grid
+title: When to use Flex vs. Grid
 description: In the hottest head-to-head to ever arise since the dawn of man. We will talk about the differences between Flex and Grid.
 updatedAt: 2021-08-19
 tags: css

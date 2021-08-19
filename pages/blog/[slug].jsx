@@ -40,6 +40,7 @@ const post = ({ source, frontmatter }) => {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={frontmatter.title} />
+        <meta property="og:image" content="/public/Asset 4.svg" />
 
         <meta property="og:description" content={frontmatter.description} />
       </Head>

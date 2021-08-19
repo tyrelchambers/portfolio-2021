@@ -35,9 +35,7 @@ const blog = ({ posts }) => {
               ? p.frontmatter.draft !== true
               : p
           )
-          .sort((a, b) =>
-            a.frontmatter.updatedAt > b.frontmatter.updatedAt ? -1 : 1
-          )
+          .sort()
           .map(
             ({
               frontmatter: { title, description, updatedAt, tags, draft },

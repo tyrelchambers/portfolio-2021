@@ -2,7 +2,7 @@
 title: What is a Ternary Operator in JavaScript?
 description: A ternary operator is a quick and dirty way to write one-liner if statements.
 updatedAt: 2021-19-08
-draft: true
+draft: false
 tags: javascript
 ---
 

@@ -36,7 +36,11 @@ const post = ({ source, frontmatter }) => {
         <meta property="og:url" content="https://tyrelchambers.com/blog" />
 
         <meta property="og:type" content="website" />
+        <meta property="og:title" content={frontmatter.title} />
+
         <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={frontmatter.title} />
+
         <meta property="og:description" content={frontmatter.description} />
       </Head>
       <Hero>

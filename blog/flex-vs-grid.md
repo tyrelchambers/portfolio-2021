@@ -24,11 +24,11 @@ Keep in mind that in reality, I could use a Flex layout to achieve this Grid loo
 
 This example comes from [Reddex](https://reddex.app).
 
-![Grid example](/images/Grid%20vs%20Flex%201.png)
+![Grid example](/images/grid%20vs%20flex%201.png)
 
 Each item is part of a Grid. It's currently 2-wide on larger screens but shrinks to a 1-wide grid.
 
-![Grid example 2](/images/Grid.jpg)
+![Grid example 2](/images/grid.jpg)
 
 If there are multiple items to be shown on a page and structure matters, I tend to use Grid. I know the graphic isn't the most high-tech or advanced, but using it in the way that is shown, is how I tend to use it. It's also used because we are working with a multi-dimensional layout.
 
@@ -38,13 +38,13 @@ Flex is great for working with individual items. It allows you to work the white
 
 On the other hand, Flex is great for layouts on a micro-level. I use Flex religiously on a smaller scale like with the screenshot below.
 
-![Flex example](/images/Grid%20vs%20Flex%202.png)
+![Flex example](/images/grid%20vs%20flex%202.png)
 
 The parent of each item is `display: Flex` (oops, I included some code). This lays out my content on the X-axis, in a row. When the parent gets too small to fit them on the same axis, they will wrap below each other.
 
 Technically, I could use Grid to accomplish the same task, but it would add a little more work and a little more structure. Because that content is only on 1-axis, using Flex makes more sense.
 
-![Flex example 2](/images/Flex.jpg)
+![Flex example 2](/images/flex.jpg)
 
 In this example, I use Flex on a small scale where the structure of these items isn't entirely important.
 

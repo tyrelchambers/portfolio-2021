@@ -33,6 +33,11 @@ const post = ({ source, frontmatter }) => {
           data-x_margin="18"
           data-y_margin="18"
         ></script>
+        <meta property="og:url" content="https://tyrelchambers.com/blog" />
+
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:description" content={frontmatter.description} />
       </Head>
       <Hero>
         <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">

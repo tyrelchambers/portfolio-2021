@@ -38,7 +38,7 @@ const blog = ({ posts }) => {
           )
           .sort()
           .map(({ frontmatter, slug }) => (
-            <Article data={frontmatter} slug={slug} />
+            <Article data={frontmatter} slug={slug} key={frontmatter.title} />
           ))}
       </div>
     </Wrapper>

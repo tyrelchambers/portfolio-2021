@@ -17,7 +17,10 @@ const Article = ({ data: { title, description, date, tags }, slug }) => {
           {tags.length > 0 && (
             <span className="flex gap-4 mt-4">
               {tags.map((t) => (
-                <p className="uppercase text-xs border-2 border-green-500 text-green-500 py-1 px-3 rounded-full font-bold">
+                <p
+                  className="uppercase text-xs border-2 border-green-500 text-green-500 py-1 px-3 rounded-full font-bold"
+                  key={t}
+                >
                   {t}
                 </p>
               ))}

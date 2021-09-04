@@ -1,7 +1,7 @@
 ---
-title: Build a Reddit Scraper - Setting up Dexie.js
+title: "Build a Reddit Scraper: Setting up Dexie.js"
 description: Welcome! Today I want to walk you through the basics of setting up Dexie.js.
-updatedAt: 2021-07-12
+date: 2021-07-12
 tags: "react,javascript,reddit,api"
 ---
 

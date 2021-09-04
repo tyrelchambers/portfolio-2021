@@ -1,7 +1,7 @@
 ---
-title: Build a Reddit Scraper - Composing Messages
+title: "Build a Reddit Scraper: Composing Messages"
 description: Today let's talk about composing and sending messages via the Reddit API using JavaScript and React (is that good SEO?).
-updatedAt: 2021-07-12
+date: 2021-07-12
 tags: "react,javascript,reddit,api"
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: When to use Flex vs. Grid
 description: In the hottest head-to-head to ever arise since the dawn of man. We will talk about the differences between Flex and Grid.
-updatedAt: 2021-08-19
+date: 2021-08-19
 tags: css
-draft: false
+published: true
 ---
 
 Confusion around Flex and Grid is still prevalent in today's developmental world. It's easy to miss the difference between the two since, on a basic level, they do the same thing. They help you layout your page in a structured way.

@@ -1,9 +1,9 @@
 ---
   title: What is semantic HTML?
   description: Semantic HTML is something every developer should know. Which elements to use and why, and what role they play.
-  updatedAt: 2021-07-21
+  date: 2021-07-21
   tags: html
-  draft: false
+  published: true
 ---
 
 Semantic HTML refers to the meaning of each element within our code. It describes the relationship between elements and helps the developer navigate the codebase. Rather than trying to parse "div soup" and figure out "what's what", we can use certain HTML elements to give us more information about the structure of our code.

@@ -1,8 +1,8 @@
 ---
-title: Build a Reddit Scraper - Authenticating With Reddit OAuth
+title: "Build a Reddit Scraper: Authenticating With Reddit OAuth"
 description: We’re continuing our series on Build a Reddit Scraper. This will be done using JavaScript!
-updatedAt: 2021-07-12
-tags: "react,javascript,reddit,api"
+date: 2021-07-12
+tags: react,javascript,reddit,api
 ---
 
 ![Hero](/images/g2qx8odzn4c4ouw1xi4y.jpeg)

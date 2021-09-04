@@ -1,8 +1,8 @@
 ---
   title: What is the CSS Box Model?
   description: Knowing what the different properties of the CSS box model are, can help you figure out how your content works with padding, margin and borders.
-  updatedAt: 2021-07-16
-  draft: false
+  date: 2021-07-16
+  published: false
   tags: css
 ---
 

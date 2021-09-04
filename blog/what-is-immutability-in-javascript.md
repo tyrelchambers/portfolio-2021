@@ -1,7 +1,7 @@
 ---
   title: What is immutability in Javascript?
   description: Immutability in Javascript is an important concept in programming. Let's talk about the basics.
-  updatedAt: 2021-07-13
+  date: 2021-07-13
   tags: immutability,beginner,javascript
 ---
 

@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Hero from "../components/Hero/Hero";
 import Wrapper from "../layouts/Wrapper/Wrapper";
 import Footer from "../layouts/Footer/Footer";
+
 export default function Home() {
   const projects = [
     {
@@ -64,6 +65,7 @@ export default function Home() {
       url: "https://jolly-goldberg-76884f.netlify.app",
     },
   ];
+
   return (
     <Wrapper>
       <Head>
@@ -81,21 +83,21 @@ export default function Home() {
         />
       </Head>
       <Hero>
-        <p className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
-          Establish your online presence{" "}
+        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+          Hey, I'm Tyrel Chambers and{" "}
           <span className="font-black text-green-400">
-            without worrying about the details
+            I'm a Full-Stack JavaScript Developer
           </span>
-        </p>
+        </h1>
         <a href="mailto:tychambers3@gmail.com?subject=Hey There!">
-          <MainBtn className="mt-12 shadow-lg">Find out how</MainBtn>
+          <MainBtn className="mt-12 shadow-lg">Let's connect!</MainBtn>
         </a>
       </Hero>
       <section className="max-w-screen-lg ml-auto mr-auto w-full">
-        <h1 className="main-title">
+        <p className="main-title">
           <span className="text-green-500">Web Developer</span> from
           Peterborough, Ontario.
-        </h1>
+        </p>
       </section>
       <section className="max-w-screen-lg ml-auto mr-auto w-full mt-20">
         <h2 className={styles.h1}>It's Nice to Meet You...</h2>

@@ -29,6 +29,7 @@ import {
   faServer,
 } from "@fortawesome/free-solid-svg-icons";
 import Tile from "../components/Tile/Tile";
+import Footer from "../layouts/Footer/Footer";
 
 const resources = () => {
   return (
@@ -39,6 +40,10 @@ const resources = () => {
           name="description"
           content="Creator resources that've helped me"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Lobster&family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Hero>
         <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
@@ -174,6 +179,7 @@ const resources = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </Wrapper>
   );
 };

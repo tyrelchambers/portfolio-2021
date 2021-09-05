@@ -2,6 +2,10 @@
   --green-500: rgb(16, 185, 129);
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -15,14 +19,13 @@ h2 a {
   font-family: "Playfair Display", serif;
 }
 
-p,
-a {
+p {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
 
 .link {
-  display: flex;
+  display: inline-flex;
   transition: all 0.2s ease;
 }
 
@@ -124,6 +127,16 @@ a {
 .mobile-nav-item:hover a {
   color: var(--green-500);
   transition: all 0.2s ease;
+}
+
+.styled-link {
+  font-family: "Lobster", cursive !important;
+  color: #f72585;
+  font-size: 1.15em;
+}
+
+.styled-link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 426px) {

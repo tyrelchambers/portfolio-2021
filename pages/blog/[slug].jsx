@@ -7,7 +7,8 @@ import Wrapper from "../../layouts/Wrapper/Wrapper";
 import Hero from "../../components/Hero/Hero";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-
+import Footer from "../../layouts/Footer/Footer";
+import NavLink from "../../components/NavLink/NavLink";
 const post = ({ source, frontmatter }) => {
   return (
     <Wrapper>
@@ -18,7 +19,7 @@ const post = ({ source, frontmatter }) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Lobster&family=Roboto:wght@300;400;700;900&display=swap"
           rel="stylesheet"
         ></link>
         <script
@@ -54,6 +55,27 @@ const post = ({ source, frontmatter }) => {
       <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
         <MDXRemote {...source} />
       </article>
+      <section className="bg-gray-800 p-4 rounded-lg mt-20">
+        <div className="max-w-screen-lg w-full ml-auto mr-auto">
+          <p className="text-gray-100 text-xl font-bold">
+            Did you enjoy this article?
+          </p>
+          <p className="text-gray-300">
+            Check out these awesome{" "}
+            <NavLink href="/resources" className="styled-link">
+              resources
+            </NavLink>{" "}
+            and follow me on{" "}
+            <NavLink
+              href="https://twitter.com/imtyrelchambers"
+              className="styled-link"
+            >
+              Twitter!
+            </NavLink>
+          </p>
+        </div>
+      </section>
+      <Footer />
     </Wrapper>
   );
 };

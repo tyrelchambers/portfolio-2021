@@ -4,6 +4,7 @@ import styles from "../styles/headings.module.css";
 import Hero from "../components/Hero/Hero";
 import Wrapper from "../layouts/Wrapper/Wrapper";
 import Footer from "../layouts/Footer/Footer";
+import NavLink from "../components/NavLink/NavLink";
 const about = () => {
   return (
     <Wrapper>
@@ -14,7 +15,10 @@ const about = () => {
           name="description"
           content="I'm a web developer from Peterborough, Ontario. I can work on design and full-stack applications."
         />
-
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Lobster&family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet"
+        ></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -53,12 +57,12 @@ const about = () => {
             <p className="text-gray-500 mt-4 font-thin max-w-2xl text-lg">
               Aside from programming, I enjoy making Youtube videos for my
               narration channel{" "}
-              <a
+              <NavLink
                 href="https://youtube.com/storiesaftermidnight"
-                className="text-blue-400"
+                className="styled-link"
               >
                 Stories After Midnight
-              </a>
+              </NavLink>
               . I also enjoy playing video games with my friends and strumming
               on my guitar. I'm a big fan of the outdoors.
             </p>

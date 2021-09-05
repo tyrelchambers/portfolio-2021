@@ -1,4 +1,5 @@
 import {
+  faBoxes,
   faHome,
   faPen,
   faSmile,
@@ -74,6 +75,13 @@ const MobileNav = () => {
             className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
           >
             <FontAwesomeIcon icon={faPen} className="mr-4 text-gray-700" /> Blog
+          </NavLink>
+          <NavLink
+            href="/resources"
+            className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
+          >
+            <FontAwesomeIcon icon={faBoxes} className="mr-4 text-gray-700" />{" "}
+            Blog
           </NavLink>
         </nav>
       </div>

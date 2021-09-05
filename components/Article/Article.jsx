@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Article = ({ data: { title, description, date, tags }, slug }) => {
+const Article = ({ data: { title, description, tags }, slug }) => {
   return (
     <article key={title} className="mb-10 flex w-full max-w-2xl">
       <div className="flex flex-col">

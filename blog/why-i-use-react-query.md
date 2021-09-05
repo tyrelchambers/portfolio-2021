@@ -3,6 +3,7 @@
   description: React Query has quickly become my go-to tool for executing API calls
   date: "September 4, 2021"
   published: false
+  tags: react,react query
 ---
 
 ![react query](/images/react-query.png)

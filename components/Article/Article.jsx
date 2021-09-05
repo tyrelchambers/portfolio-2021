@@ -8,7 +8,9 @@ const Article = ({ data: { title, description, tags }, slug }) => {
         <header className="flex items-center gap-6">
           <h2>
             <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
-              <a className="text-2xl font-bold text-gray-800">{title}</a>
+              <a className="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-all">
+                {title}
+              </a>
             </Link>
           </h2>
         </header>

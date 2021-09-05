@@ -109,9 +109,9 @@ export default function Home() {
         </p>
 
         <p className="text-gray-500 mt-2 font-thin max-w-2xl text-lg">
-          My focus is on creating websites for those who make a living online.
-          I'd like to help small businesses and creatives by creating them
-          something they can use and be proud of.
+          My focus as a freelance developer, is creating websites for those who
+          make a living online. I'd like to help small businesses and creatives
+          by creating them something they can use and be proud of.
         </p>
         <p className="text-gray-500 mt-2 font-thin max-w-2xl text-lg">
           If you're a social media influencer, a small business, youtuber,

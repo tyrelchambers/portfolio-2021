@@ -28,6 +28,12 @@ const Nav = () => {
       >
         Blog
       </NavLink>
+      <NavLink
+        href="/resources"
+        className="text-white opacity-70 hover:opacity-100 transition-all"
+      >
+        Resources
+      </NavLink>
     </nav>
   );
 };

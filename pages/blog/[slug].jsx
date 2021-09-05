@@ -12,7 +12,7 @@ const post = ({ source, frontmatter }) => {
   return (
     <Wrapper>
       <Head>
-        <title>Tyrel Chambers | Blog</title>
+        <title>Tyrel Chambers | {frontmatter.title}</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

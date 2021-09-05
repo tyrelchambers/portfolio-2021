@@ -53,13 +53,9 @@ export async function getStaticProps() {
 
     const { data } = matter(markdownWithMetadata);
 
-    // Convert post date to format: Month day, Year
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    const formattedDate = data.date.toLocaleDateString("en-US", options);
     const formattedTags = data.tags ? data.tags.split(",") : [];
     const frontmatter = {
       ...data,
-      date: formattedDate,
       tags: formattedTags,
     };
 

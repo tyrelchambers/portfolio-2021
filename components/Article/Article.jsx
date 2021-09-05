@@ -18,7 +18,7 @@ const Article = ({ data: { title, description, date, tags }, slug }) => {
             <span className="flex gap-4 mt-4">
               {tags.map((t) => (
                 <p
-                  className="uppercase text-xs border-2 border-green-500 text-green-500 py-1 px-3 rounded-full font-bold"
+                  className="uppercase text-xs text-green-500  rounded-full font-bold"
                   key={t}
                 >
                   {t}
@@ -26,7 +26,6 @@ const Article = ({ data: { title, description, date, tags }, slug }) => {
               ))}
             </span>
           )}
-          <div className="text-gray-500 italic mt-2 text-sm">{date}</div>
         </section>
       </div>
     </article>

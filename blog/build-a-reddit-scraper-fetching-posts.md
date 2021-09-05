@@ -1,7 +1,7 @@
 ---
 title: "Build a Reddit Scraper: Fetching Posts"
 description: The first step to making our Reddit scraper an actual product, is getting actual posts. I live in the nosleep subreddit, but you can substitute any subreddit and it will be the same result.
-date: 2021-07-12
+date: "July 12, 2021"
 tags: "react,javascript,reddit,api"
 ---
 

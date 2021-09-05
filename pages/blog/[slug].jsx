@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -49,7 +49,7 @@ const post = ({ source, frontmatter }) => {
         <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
           {frontmatter.title}
         </h1>
-        <p className="text-green-500 font-bold">{frontmatter.date}</p>
+        <p className="text-green-500 font-bold mt-4">{frontmatter.date}</p>
       </Hero>
       <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
         <MDXRemote {...source} />
@@ -81,15 +81,12 @@ export async function getStaticProps({ params: { slug } }) {
   const { data, content } = matter(markdownWithMetadata);
   const mdxSource = await serialize(content);
   // Convert post date to format: Month day, Year
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = data.date.toLocaleDateString("en-US", options);
+
   const formattedTags = data.tags ? data.tags.split(",") : [];
 
   const frontmatter = {
     ...data,
-    date: formattedDate,
     tags: formattedTags,
-    rawMarkdown: markdownWithMetadata,
   };
 
   return {

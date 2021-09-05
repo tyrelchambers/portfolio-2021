@@ -1,7 +1,7 @@
 ---
   title: What is semantic HTML?
   description: Semantic HTML is something every developer should know. Which elements to use and why, and what role they play.
-  date: 2021-07-21
+  date: "July 21, 2021"
   tags: html
   published: true
 ---

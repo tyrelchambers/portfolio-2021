@@ -35,9 +35,10 @@ const blog = ({ posts }) => {
         <input
           type="search"
           placeholder="search for an article"
-          className="bg-gray-100 p-2 rounded-md shadow-md w-full mt-4 mb-20"
+          className="bg-gray-100 p-2 rounded-md shadow-md w-full mt-4 mb-10"
           onChange={(e) => searchArticles(e.target.value)}
         />
+        <hr className="mb-10" />
         {state
           .filter((p) =>
             process.env.NODE_ENV !== "development"

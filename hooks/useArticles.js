@@ -9,7 +9,10 @@ export const useArticles = (initialState) => {
 
   const searchArticles = (query) => {
     const arr = initialState.filter((a) => {
-      return a.frontmatter.title.toLowerCase().includes(query.toLowerCase());
+      return (
+        a.frontmatter.title.toLowerCase().includes(query.toLowerCase()) ||
+        a.frontmatter.tags.includes(query)
+      );
     });
     setstate(arr);
   };

@@ -96,7 +96,7 @@ export default function Home() {
       </Hero>
       <section className="max-w-screen-lg ml-auto mr-auto w-full">
         <p className="main-title">
-          <span className="text-green-500">Web Developer</span> from
+          <span className="text-green-500">Freelance Web Developer</span> from
           Peterborough, Ontario.
         </p>
       </section>
@@ -120,12 +120,10 @@ export default function Home() {
           let's build something together.
         </p>
         <div className="mt-4">
-          <Link href="/about">
-            <a className="underline text-blue-500">
-              <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-4" />
-              Want to know more?
-            </a>
-          </Link>
+          <NavLink href="/about" className="styled-link flex items-center">
+            <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-4" />
+            Want to know more?
+          </NavLink>
         </div>
       </section>
       <section className="h-96 overflow-hidden max-w-screen-lg ml-auto mr-auto w-full rounded-lg flex items-center mt-20  ">

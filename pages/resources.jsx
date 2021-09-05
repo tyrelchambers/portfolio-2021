@@ -56,7 +56,10 @@ const resources = () => {
         <P>
           Have something you think belongs on this list? Send me an email with a
           link and the name of the tool or book/article to{" "}
-          <a href="mailto:tychambers3@gmail.com?subject=New Resource">
+          <a
+            href="mailto:tychambers3@gmail.com?subject=New Resource"
+            className="underline"
+          >
             tychambers3@gmail.com.
           </a>
         </P>

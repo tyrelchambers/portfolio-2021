@@ -84,7 +84,7 @@ export default function Home() {
         />
       </Head>
       <Hero>
-        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+        <h1 className="text-7xl font-thin text-gray-200 hero-title mt-10">
           Hey, I'm Tyrel Chambers and{" "}
           <span className="font-black text-green-400">
             I'm a Full-Stack JavaScript Developer

@@ -45,7 +45,7 @@ const MobileNav = () => {
       <div
         className={`mobile-nav-wrapper relative light ${isOpen ? "open" : ""}`}
       >
-        <nav className="mobile-nav p-4 mt-10">
+        <nav className="mobile-nav p-4 mt-10 flex flex-col">
           <NavLink
             href="/"
             className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
@@ -81,7 +81,7 @@ const MobileNav = () => {
             className="text-gray-600 flex items-center  opacity-100 transition-all text-xl"
           >
             <FontAwesomeIcon icon={faBoxes} className="mr-4 text-gray-700" />{" "}
-            Blog
+            Resources
           </NavLink>
         </nav>
       </div>

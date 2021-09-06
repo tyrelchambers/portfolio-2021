@@ -1,9 +1,8 @@
 import React from "react";
-import { MainBtn } from "../../components/Buttons/Buttons";
 import Socials from "../../components/Socials/Socials";
 const Footer = () => {
   const currentYear = new Date(Date.now()).getFullYear();
-  console.log(currentYear);
+
   return (
     <footer className="hero flex flex-col py-12 p-6 pb-12 bg-gray-50 mt-4">
       <div className="max-w-screen-lg flex flex-col items-center ml-auto mr-auto w-full">

@@ -8,13 +8,13 @@ const Footer = () => {
     <footer className="hero flex flex-col py-12 p-6 pb-12 bg-gray-50 mt-4">
       <div className="max-w-screen-lg flex flex-col items-center ml-auto mr-auto w-full">
         <div className="flex flex-col items-center">
-          <p className="text-2xl mb-2 font-bold">Tyrel Chambers</p>
-          <p className="text-gray-700">
+          <p className="text-2xl mb-2 font-bold text-center">Tyrel Chambers</p>
+          <p className="text-gray-700 text-center">
             Thank you for visiting. I hope to see you again soon.
           </p>
           <a
             href="mailto:tychambers3@gmail.com?subject=Hey There!"
-            className="styled-link mt-6"
+            className="styled-link mt-6 text-center"
           >
             Want to connect? Send me an email and say hello!
           </a>

@@ -4,9 +4,8 @@ description: Welcome! Today I want to walk you through the basics of setting up 
 date: "July 12, 2021"
 tags: "react,javascript,reddit,api"
 published: true
+banner: /images/32nzezokpzaht9h2tz2l.jpeg
 ---
-
-![Hero](/images/32nzezokpzaht9h2tz2l.jpeg)
 
 Welcome! Today I want to walk you through the basics of setting up Dexie.js.
 

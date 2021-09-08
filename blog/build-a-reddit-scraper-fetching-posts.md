@@ -4,9 +4,8 @@ description: The first step to making our Reddit scraper an actual product, is g
 date: "July 12, 2021"
 tags: "react,javascript,reddit,api"
 published: true
+banner: /images/68ifs9prng25wqdmlxm8.jpeg
 ---
-
-![Hero](/images/68ifs9prng25wqdmlxm8.jpeg)
 
 ### **Getting Our Posts**
 

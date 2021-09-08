@@ -4,9 +4,8 @@
   date: "September 4, 2021"
   published: true
   tags: react,react query
+  banner: /images/react-query.png
 ---
-
-![react query](/images/react-query.png)
 
 I tend to write my APIs as REST. However, when I implemented GraphQL in one of my projects, I loved the way it provided its fetching status, data and other information.
 

@@ -4,9 +4,8 @@ description: This series will cover how I built a Reddit scraper using React/Jav
 date: "July 12, 2021"
 tags: "react,javascript,node,mongodb"
 published: true
+banner: /images/tt2akm8ifst3v8721pqo.jpeg
 ---
-
-![Hero](/images/tt2akm8ifst3v8721pqo.jpeg)
 
 # The Goal of this Series
 

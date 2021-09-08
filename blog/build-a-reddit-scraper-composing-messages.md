@@ -4,9 +4,8 @@ description: Today let's talk about composing and sending messages via the Reddi
 date: "July 12, 2021"
 tags: "react,javascript,reddit,api"
 published: true
+banner: /images/oe51ziw64u0g0usp9xbk.jpeg
 ---
-
-![Hero](/images/oe51ziw64u0g0usp9xbk.jpeg)
 
 Today let's talk about composing and sending messages via the Reddit API using JavaScript and React (is that good SEO?).
 

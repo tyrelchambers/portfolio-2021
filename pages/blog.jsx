@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Wrapper from "../layouts/Wrapper/Wrapper";
 import Head from "next/head";
 import matter from "gray-matter";

@@ -3,6 +3,7 @@ title: "Build a Reddit Scraper: Setting up Dexie.js"
 description: Welcome! Today I want to walk you through the basics of setting up Dexie.js.
 date: "July 12, 2021"
 tags: "react,javascript,reddit,api"
+published: true
 ---
 
 ![Hero](/images/32nzezokpzaht9h2tz2l.jpeg)

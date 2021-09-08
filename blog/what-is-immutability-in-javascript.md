@@ -3,6 +3,7 @@
   description: Immutability in Javascript is an important concept in programming. Let's talk about the basics.
   date: "July 13, 2021"
   tags: immutability,beginner,javascript
+  published: true
 ---
 
 Immutability means that a value or data structure cannot change. Explaining what is mutable(values that can be changed) and what is immutable(values that cannot be changed) can be tricky so let me try to sum it up the best I can.

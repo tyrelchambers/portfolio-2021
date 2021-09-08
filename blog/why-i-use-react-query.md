@@ -2,7 +2,7 @@
   title: Why I use React Query
   description: React Query has quickly become my go-to tool for executing API calls
   date: "September 4, 2021"
-  published: false
+  published: true
   tags: react,react query
 ---
 

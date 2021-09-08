@@ -3,6 +3,7 @@ title: "Build a Reddit Scraper: Problem & Solution"
 description: This series will cover how I built a Reddit scraper using React/JavaScript and I’m hoping I can help explain a little but of how Reddit’s API works.
 date: "July 12, 2021"
 tags: "react,javascript,node,mongodb"
+published: true
 ---
 
 ![Hero](/images/tt2akm8ifst3v8721pqo.jpeg)

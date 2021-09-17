@@ -5,8 +5,11 @@ import Hero from "../components/Hero/Hero";
 import P from "../components/P/P";
 import { H2, H3 } from "../components/Headings/Headings";
 import {
+  articles,
   books,
+  cheatSheets,
   codeResources,
+  colourPickers,
   communication,
   designSoftware,
   photography,
@@ -109,7 +112,7 @@ const resources = () => {
           <div className="mt-10">
             <H3>Cheat Sheets</H3>
             <ul className="grid grid-cols-3 grid-list gap-4 mt-6">
-              {sourceControl.map((data, key) => (
+              {cheatSheets.map((data, key) => (
                 <Tile data={data} icon={faFile} key={key} />
               ))}
             </ul>
@@ -118,7 +121,7 @@ const resources = () => {
           <div className="mt-10">
             <H3>Colour Pickers</H3>
             <ul className="grid grid-cols-3 grid-list gap-4 mt-6">
-              {sourceControl.map((data, key) => (
+              {colourPickers.map((data, key) => (
                 <Tile data={data} icon={faPaintBrush} key={key} />
               ))}
             </ul>
@@ -127,7 +130,7 @@ const resources = () => {
           <div className="mt-10">
             <H3>Articles</H3>
             <ul className="grid grid-cols-3 grid-list gap-4 mt-6">
-              {sourceControl.map((data, key) => (
+              {articles.map((data, key) => (
                 <Tile data={data} icon={faBook} key={key} />
               ))}
             </ul>

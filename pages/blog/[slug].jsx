@@ -8,8 +8,9 @@ import Hero from "../../components/Hero/Hero";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Footer from "../../layouts/Footer/Footer";
-import NavLink from "../../components/NavLink/NavLink";
-const post = ({ source, frontmatter }) => {
+import ArticleCTA from "../../components/ArticleCTA/ArticleCTA";
+import ArticleRecommends from "../../components/ArticleRecommends/ArticleRecommends";
+const post = ({ source, frontmatter, posts }) => {
   return (
     <Wrapper>
       <Head>
@@ -60,24 +61,8 @@ const post = ({ source, frontmatter }) => {
       <article className="prose ml-auto mr-auto mt-10 prose-blue w-full">
         <MDXRemote {...source} />
       </article>
-      <section className="max-w-screen-sm w-full ml-auto mr-auto bg-gray-800 p-4 rounded-lg mt-20">
-        <p className="text-gray-100 text-xl font-bold">
-          Did you enjoy this article?
-        </p>
-        <p className="text-gray-300">
-          Check out these awesome{" "}
-          <NavLink href="/resources" className="styled-link">
-            resources
-          </NavLink>{" "}
-          and follow me on{" "}
-          <NavLink
-            href="https://twitter.com/imtyrelchambers"
-            className="styled-link"
-          >
-            Twitter!
-          </NavLink>
-        </p>
-      </section>
+      <ArticleCTA />
+      <ArticleRecommends articles={posts} />
       <Footer />
     </Wrapper>
   );
@@ -99,9 +84,28 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
+  const files = fs.readdirSync(`${process.cwd()}/blog`);
+
   const markdownWithMetadata = fs
     .readFileSync(path.join("blog", slug + ".md"))
     .toString();
+
+  const posts = files.map((filename) => {
+    const markdownWithMetadata = fs.readFileSync(`blog/${filename}`).toString();
+
+    const { data } = matter(markdownWithMetadata);
+
+    const formattedTags = data.tags ? data.tags.split(",") : [];
+    const frontmatter = {
+      ...data,
+      tags: formattedTags,
+    };
+
+    return {
+      slug: filename.replace(".md", ""),
+      frontmatter,
+    };
+  });
 
   const { data, content } = matter(markdownWithMetadata);
   const mdxSource = await serialize(content);
@@ -118,6 +122,7 @@ export async function getStaticProps({ params: { slug } }) {
     props: {
       source: mdxSource,
       frontmatter,
+      posts,
     },
   };
 }

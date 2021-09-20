@@ -7,6 +7,7 @@ import Hero from "../components/Hero/Hero";
 import Article from "../components/Article/Article";
 import { H2 } from "../components/Headings/Headings";
 import { useArticles } from "../hooks/useArticles";
+
 const blog = ({ posts }) => {
   const { state, searchArticles } = useArticles(posts);
   return (

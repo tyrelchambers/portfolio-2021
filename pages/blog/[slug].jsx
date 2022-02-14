@@ -35,6 +35,12 @@ const post = ({ source, frontmatter, posts }) => {
           data-x_margin="18"
           data-y_margin="18"
         ></script>
+        <script
+          defer
+          data-domain="tyrelchambers.com"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
+
         <meta property="og:url" content="https://tyrelchambers.com/blog" />
 
         <meta property="og:type" content="website" />

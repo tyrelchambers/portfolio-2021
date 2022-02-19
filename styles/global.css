@@ -119,7 +119,7 @@ p {
 }
 
 .nav-item:hover .icon-wrapper {
-  background: whitesmoke;
+  background: white;
   border-radius: 50%;
 }
 

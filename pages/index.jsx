@@ -30,7 +30,7 @@ export default function Home({ posts }) {
 
       <section className="mt-10 border-t-[1px] border-b-[1px] border-gray-200 pt-10 pb-10">
         <H2>Recently Published</H2>
-        <div className="flex flex-col mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-8 gap-6">
           {state
             .filter((p) =>
               process.env.NODE_ENV !== "development"
@@ -47,7 +47,7 @@ export default function Home({ posts }) {
         </div>
         <NavLink
           href="/blog"
-          className="underline flex items-center text-gray-500 hover:text-gray-900 transition-all"
+          className="underline flex items-center text-gray-500 hover:text-gray-900 transition-all mt-6"
         >
           <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-4" />
           Read more articles

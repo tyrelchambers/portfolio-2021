@@ -14,17 +14,17 @@ const blog = ({ posts }) => {
   return (
     <Wrapper>
       <CommonHead title="Tyrel Chambers | Blog" />
-      <div className="flex items-center justify-between gap-6">
+      <div className="flex items-center justify-between gap-6  mb-20">
         <H1>Blog</H1>
         <input
           type="search"
           placeholder="search for an article"
-          className="bg-gray-200 p-4 rounded-full shadow-md w-full max-w-lg  text-gray-800"
+          className="bg-gray-50 p-4 rounded-full shadow-md w-full max-w-lg  text-gray-800"
           onChange={(e) => searchArticles(e.target.value)}
         />
       </div>
 
-      <div className="max-w-screen-lg  w-full mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
         {state
           .filter((p) =>
             process.env.NODE_ENV !== "development"

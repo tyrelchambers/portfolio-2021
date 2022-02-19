@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Link from "next/link";
 
-const Socials = () => {
+const Socials = ({ direction }) => {
   const socials = [
     {
       url: "https://twitter.com/imtyrelchambers",
@@ -28,7 +28,7 @@ const Socials = () => {
     },
   ];
   return (
-    <div className="flex gap-8">
+    <div className={`flex gap-8 ${direction === "col" && "flex-col"}`}>
       {socials.map((s) => (
         <Link href={s.url}>
           <a

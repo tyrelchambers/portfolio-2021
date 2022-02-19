@@ -10,7 +10,7 @@ import NavLink from "../../components/NavLink/NavLink";
 
 const Nav = () => {
   return (
-    <nav className="flex flex-col gap-6 nav mt-10">
+    <nav className="flex flex-col gap-6 nav border-[1px] border-gray-300 py-10 rounded-full bg-slate-100 p-2">
       <NavLink
         href="/"
         className="text-slate-900 opacity-70 hover:opacity-100 transition-all nav-item flex flex-col items-center"

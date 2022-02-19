@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Article = ({ data: { title, description, tags, banner }, slug }) => {
   return (
-    <article key={title} className="mb-10 flex w-full max-w-2xl article">
+    <article key={title} className="flex w-full  bg-gray-50 p-4 rounded-lg">
       <div className="flex flex-col">
         <header className="flex items-center gap-6">
           <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>

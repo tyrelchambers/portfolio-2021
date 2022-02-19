@@ -3,7 +3,7 @@ import styles from "../../styles/headings.module.css";
 
 export const H1 = (props) => (
   <h1
-    className={`text-5xl font-thin text-gray-800 max-w-3xl mt-10 ${
+    className={`text-5xl font-thin text-gray-800 max-w-3xl ${
       props.className ? props.className : ""
     }`}
   >

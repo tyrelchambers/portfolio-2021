@@ -1,11 +1,9 @@
 import React from "react";
 import Wrapper from "../layouts/Wrapper/Wrapper";
-import Head from "next/head";
 import matter from "gray-matter";
 import fs from "fs";
-import Hero from "../components/Hero/Hero";
 import Article from "../components/Article/Article";
-import { H1, H2 } from "../components/Headings/Headings";
+import { H1 } from "../components/Headings/Headings";
 import { useArticles } from "../hooks/useArticles";
 import CommonHead from "../components/CommonHead";
 

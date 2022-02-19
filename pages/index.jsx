@@ -1,4 +1,3 @@
-import styles from "../styles/headings.module.css";
 import NavLink from "../components/NavLink/NavLink";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

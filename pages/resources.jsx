@@ -1,7 +1,5 @@
 import React from "react";
 import Wrapper from "../layouts/Wrapper/Wrapper";
-import Head from "next/head";
-import Hero from "../components/Hero/Hero";
 import P from "../components/P/P";
 import { H1, H2, H3 } from "../components/Headings/Headings";
 import {
@@ -18,7 +16,6 @@ import {
   sourceControl,
   tutorials,
 } from "../constants/resources";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBook,
   faCamera,

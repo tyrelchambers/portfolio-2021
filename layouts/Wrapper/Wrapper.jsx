@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MobileNav from "../../components/MobileNav/MobileNav";
 import Socials from "../../components/Socials/Socials";
-import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 
 const Wrapper = (props) => {

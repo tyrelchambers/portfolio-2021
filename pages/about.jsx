@@ -1,7 +1,5 @@
 import React from "react";
-import Head from "next/head";
 import styles from "../styles/headings.module.css";
-import Hero from "../components/Hero/Hero";
 import Wrapper from "../layouts/Wrapper/Wrapper";
 import Footer from "../layouts/Footer/Footer";
 import NavLink from "../components/NavLink/NavLink";

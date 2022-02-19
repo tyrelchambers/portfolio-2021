@@ -42,7 +42,7 @@ const post = ({ source, frontmatter, posts }) => {
         <MDXRemote {...source} />
       </article>
       <ArticleCTA />
-      <ArticleRecommends articles={posts} />
+      {/* <ArticleRecommends articles={posts} /> */}
       <Footer />
     </Wrapper>
   );
@@ -97,8 +97,6 @@ export async function getStaticProps({ params: { slug } }) {
     ...data,
     tags: formattedTags,
   };
-
-  console.log("frontmatter in props", frontmatter);
 
   return {
     props: {

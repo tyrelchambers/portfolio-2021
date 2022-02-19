@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { getRandomInt } from "../../libs/randomInt";
+
 const ArticleRecommends = ({ articles }) => {
   return (
     <section className="max-w-screen-lg mt-8 w-full ml-auto mr-auto ">
@@ -20,7 +20,6 @@ const ArticleRecommends = ({ articles }) => {
                 className="bg-gray-100 p-4 rounded-lg flex flex-col sm:flex-row"
                 key={frontmatter.title}
               >
-                {console.log("frontmatter in artcile recommends", frontmatter)}
                 {frontmatter.banner && (
                   <img
                     src={frontmatter.banner}

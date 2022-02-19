@@ -2,25 +2,13 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { getRandomInt } from "../../libs/randomInt";
 const ArticleRecommends = ({ articles }) => {
-  const [state, setState] = useState([]);
-
-  useEffect(() => {
-    const articleIndex1 = getRandomInt(0, articles.length);
-    let articleIndex2 = getRandomInt(0, articles.length);
-    if (articleIndex1 === articleIndex2) {
-      articleIndex2 = getRandomInt(0, articles.length);
-    }
-
-    setState([articles.at(articleIndex1), articles.at(articleIndex2)]);
-  }, [articles]);
-
   return (
     <section className="max-w-screen-lg mt-8 w-full ml-auto mr-auto ">
       <p className="mb-4 text-lg font-bold">You might also enjoy...</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {state.length > 0 &&
-          state
+        {articles.length > 0 &&
+          articles
             .filter((p) =>
               process.env.NODE_ENV !== "development"
                 ? p.frontmatter.published !== false

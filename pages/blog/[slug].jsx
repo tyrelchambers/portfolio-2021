@@ -10,8 +10,11 @@ import ArticleCTA from "../../components/ArticleCTA/ArticleCTA";
 import ArticleRecommends from "../../components/ArticleRecommends/ArticleRecommends";
 import CommonHead from "../../components/CommonHead";
 import { H1 } from "../../components/Headings/Headings";
+import { useArticleSuggestions } from "../../hooks/useArticleSuggestions";
+
 const post = ({ source, frontmatter, posts }) => {
-  console.log("frontmatter in [slug]", frontmatter);
+  const { suggestions } = useArticleSuggestions(posts);
+
   return (
     <Wrapper>
       <CommonHead title={`Tyrel Chambers | ${frontmatter.title}`}>
@@ -42,7 +45,7 @@ const post = ({ source, frontmatter, posts }) => {
         <MDXRemote {...source} />
       </article>
       <ArticleCTA />
-      {/* <ArticleRecommends articles={posts} /> */}
+      <ArticleRecommends articles={suggestions} />
       <Footer />
     </Wrapper>
   );

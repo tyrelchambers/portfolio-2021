@@ -30,7 +30,7 @@ const post = ({ source, frontmatter, posts }) => {
       <p className="text-gray-500 mt-4 font-thin max-w-2xl text-2xl ml-auto mr-auto text-center">
         {frontmatter.date}
       </p>
-      {frontmatter.banner && (
+      {frontmatter?.banner && (
         <img
           src={frontmatter.banner}
           alt=""

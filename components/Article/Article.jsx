@@ -4,13 +4,6 @@ import Link from "next/link";
 const Article = ({ data: { title, description, tags, banner }, slug }) => {
   return (
     <article key={title} className="mb-10 flex w-full max-w-2xl article">
-      {banner && (
-        <img
-          src={banner}
-          alt=""
-          className="w-48 rounded-lg mr-6 shadow-md object-cover article-thumb"
-        />
-      )}
       <div className="flex flex-col">
         <header className="flex items-center gap-6">
           <h2>

@@ -23,18 +23,7 @@ const post = ({ source, frontmatter, posts }) => {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Lobster&family=Roboto:wght@300;400;700;900&display=swap"
           rel="stylesheet"
         ></link>
-        <script
-          data-name="BMC-Widget"
-          data-cfasync="false"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-          data-id="tyrelchambers"
-          data-description="Support me on Buy me a coffee!"
-          data-message="If you enjoyed this post and found it useful, feel free to buy me a pizza or share on social media 😀"
-          data-color="#5F7FFF"
-          data-position="Right"
-          data-x_margin="18"
-          data-y_margin="18"
-        ></script>
+
         <script
           defer
           data-domain="tyrelchambers.com"

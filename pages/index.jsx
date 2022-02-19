@@ -1,11 +1,7 @@
-import Head from "next/head";
-import { MainBtn } from "../components/Buttons/Buttons";
 import styles from "../styles/headings.module.css";
 import NavLink from "../components/NavLink/NavLink";
-import Link from "next/link";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Hero from "../components/Hero/Hero";
 import Wrapper from "../layouts/Wrapper/Wrapper";
 import Footer from "../layouts/Footer/Footer";
 import CommonHead from "../components/CommonHead";
@@ -31,14 +27,7 @@ export default function Home({ posts }) {
           and photography.
         </p>
       </section>
-      {/* <section className="flex flex-col items-center mt-20 max-w-2xl">
-        <img
-          src="/mtn.jpeg"
-          className="w-full object-cover rounded-lg h-96"
-          alt=""
-        />
-        <caption className="text-gray-500 mt-2">Thunder Bay, Ontario</caption>
-      </section> */}
+
       <section className="mt-10 border-t-[1px] border-b-[1px] border-gray-200 pt-10 pb-10">
         <h2 className={styles.h2}>Recently Published</h2>
         <div className="flex flex-col mt-8">

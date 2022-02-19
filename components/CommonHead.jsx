@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const CommonHead = ({ title = "Tyrel Chambers" }) => {
+const CommonHead = ({ title = "Tyrel Chambers", children }) => {
   return (
     <Head>
       <title>{title}</title>
@@ -15,6 +15,7 @@ const CommonHead = ({ title = "Tyrel Chambers" }) => {
         name="description"
         content="Web developer from Peterborough, Ontario."
       />
+      {children}
     </Head>
   );
 };

@@ -10,17 +10,17 @@ import fs from "fs";
 import matter from "gray-matter";
 import Article from "../components/Article/Article";
 import { useArticles } from "../hooks/useArticles";
+import { H1, H2 } from "../components/Headings/Headings";
 
 export default function Home({ posts }) {
-  console.log(posts);
   const { state } = useArticles(posts);
 
   return (
     <Wrapper>
       <CommonHead />
 
-      <section className="max-w-screen-lg  w-full mt-20 ">
-        <h1 className="text-5xl font-bold">Hey, I'm Tyrel Chambers 👋</h1>
+      <section className="max-w-screen-lg  w-full ">
+        <H1>Hey, I'm Tyrel Chambers 👋</H1>
 
         <p className="text-gray-500 mt-4 font-thin max-w-2xl text-2xl">
           I'm a full-stack web developer. In my free-time I enjoy programming
@@ -29,7 +29,7 @@ export default function Home({ posts }) {
       </section>
 
       <section className="mt-10 border-t-[1px] border-b-[1px] border-gray-200 pt-10 pb-10">
-        <h2 className={styles.h2}>Recently Published</h2>
+        <H2>Recently Published</H2>
         <div className="flex flex-col mt-8">
           {state
             .filter((p) =>
@@ -54,10 +54,10 @@ export default function Home({ posts }) {
         </NavLink>
       </section>
 
-      <section className="max-w-screen-lg  w-full mt-20">
-        <h2 className={styles.h2}>What I've Done</h2>
+      <section className=" w-full mt-20">
+        <H2>What I've Done</H2>
 
-        <div className="grid grid-cols-2 mt-6 gap-4 gap-y-8 grid-list">
+        <div className="grid grid-cols-3 mt-6 gap-4 gap-y-8 grid-list">
           {projects.map((p) => (
             <div className="flex w-full" key={p.title}>
               <div className="mt-6 flex">

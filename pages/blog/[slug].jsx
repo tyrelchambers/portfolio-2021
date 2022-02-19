@@ -9,6 +9,7 @@ import Footer from "../../layouts/Footer/Footer";
 import ArticleCTA from "../../components/ArticleCTA/ArticleCTA";
 import ArticleRecommends from "../../components/ArticleRecommends/ArticleRecommends";
 import CommonHead from "../../components/CommonHead";
+import { H1 } from "../../components/Headings/Headings";
 const post = ({ source, frontmatter, posts }) => {
   return (
     <Wrapper>
@@ -25,9 +26,7 @@ const post = ({ source, frontmatter, posts }) => {
 
         <meta property="og:description" content={frontmatter.description} />
       </CommonHead>
-      <h1 className="text-5xl font-thin text-gray-800 max-w-3xl mt-4 text-center ml-auto mr-auto">
-        {frontmatter.title}
-      </h1>
+      <H1 className="text-center ml-auto mr-auto">{frontmatter.title}</H1>
       <p className="text-gray-500 mt-4 font-thin max-w-2xl text-2xl ml-auto mr-auto text-center">
         {frontmatter.date}
       </p>

@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import fs from "fs";
 import Hero from "../components/Hero/Hero";
 import Article from "../components/Article/Article";
-import { H2 } from "../components/Headings/Headings";
+import { H1, H2 } from "../components/Headings/Headings";
 import { useArticles } from "../hooks/useArticles";
 import CommonHead from "../components/CommonHead";
 
@@ -15,7 +15,7 @@ const blog = ({ posts }) => {
     <Wrapper>
       <CommonHead title="Tyrel Chambers | Blog" />
       <div className="flex items-center justify-between gap-6">
-        <h1 className="text-5xl font-bold">Blog</h1>
+        <H1>Blog</H1>
         <input
           type="search"
           placeholder="search for an article"

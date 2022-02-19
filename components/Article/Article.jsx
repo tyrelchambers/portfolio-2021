@@ -6,13 +6,11 @@ const Article = ({ data: { title, description, tags, banner }, slug }) => {
     <article key={title} className="mb-10 flex w-full max-w-2xl article">
       <div className="flex flex-col">
         <header className="flex items-center gap-6">
-          <h2>
-            <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
-              <a className="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-all">
-                {title}
-              </a>
-            </Link>
-          </h2>
+          <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
+            <h2 className="text-2xl font-bold text-gray-700  hover:text-blue-500 transition-all cursor-pointer">
+              {title}
+            </h2>
+          </Link>
         </header>
         <section className="mt-2">
           <p className="text-gray-500">{description}</p>

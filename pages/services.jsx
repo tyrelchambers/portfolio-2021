@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import React from "react";
+import { H1 } from "../components/Headings/Headings";
 import Hero from "../components/Hero/Hero";
 import Footer from "../layouts/Footer/Footer";
 import Wrapper from "../layouts/Wrapper/Wrapper";
@@ -31,10 +32,10 @@ const services = () => {
         ></link>
       </Head>
       <Hero>
-        <h1 className="text-7xl font-thin text-gray-200 max-w-3xl hero-title mt-10">
+        <H1>
           Can I help you{" "}
           <span className="font-black text-green-400">get started?</span>
-        </h1>
+        </H1>
       </Hero>
 
       <div className="max-w-screen-lg w-full ml-auto mr-auto mt-10">

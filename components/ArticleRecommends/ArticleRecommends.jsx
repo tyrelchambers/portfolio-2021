@@ -31,6 +31,7 @@ const ArticleRecommends = ({ articles }) => {
               className="bg-gray-100 p-4 rounded-lg flex flex-col sm:flex-row"
               key={frontmatter.title}
             >
+              {console.log("frontmatter in artcile recommends", frontmatter)}
               {frontmatter.banner && (
                 <img
                   src={frontmatter.banner}

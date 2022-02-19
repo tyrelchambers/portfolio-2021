@@ -11,6 +11,7 @@ import ArticleRecommends from "../../components/ArticleRecommends/ArticleRecomme
 import CommonHead from "../../components/CommonHead";
 import { H1 } from "../../components/Headings/Headings";
 const post = ({ source, frontmatter, posts }) => {
+  console.log("frontmatter in [slug]", frontmatter);
   return (
     <Wrapper>
       <CommonHead title={`Tyrel Chambers | ${frontmatter.title}`}>
@@ -96,6 +97,8 @@ export async function getStaticProps({ params: { slug } }) {
     ...data,
     tags: formattedTags,
   };
+
+  console.log("frontmatter in props", frontmatter);
 
   return {
     props: {

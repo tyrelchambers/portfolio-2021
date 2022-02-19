@@ -33,7 +33,7 @@ export default function Home({ posts }) {
           {state
             .filter((p) =>
               process.env.NODE_ENV !== "development"
-                ? p.frontmatter.published !== false
+                ? p.frontmatter?.published !== false
                 : p
             )
             .sort((a, b) => {

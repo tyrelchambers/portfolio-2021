@@ -22,7 +22,7 @@ const ArticleRecommends = ({ articles }) => {
         {state
           .filter((p) =>
             process.env.NODE_ENV !== "development"
-              ? p.frontmatter.published !== false
+              ? p.frontmatter?.published !== false
               : p
           )
 

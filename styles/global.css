@@ -6,12 +6,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Playfair Display", serif;
 }
 
@@ -21,27 +16,12 @@ h2 a {
 
 p {
   font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .link {
   display: inline-flex;
   transition: all 0.2s ease;
-}
-
-.hero {
-  height: 100%;
-  border-radius: 15px;
-}
-
-.hero-body {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-title {
-  line-height: 1.3em;
-  font-family: "Playfair Display", serif;
 }
 
 .project-gradient {
@@ -50,23 +30,11 @@ p {
 
 .toggle-wrapper {
   position: fixed;
-  top: 2.5em;
-  right: 2.5em;
+  top: 1em;
+  right: 1em;
   z-index: 99;
-  gap: 0.25em;
+  gap: 0.5em;
   transform: rotateZ(180deg);
-}
-
-.toggle-wrapper .dot {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-.toggle-wrapper.open .arrow {
-  background-color: var(--green-500) !important;
 }
 
 .toggle-wrapper .white {
@@ -102,14 +70,6 @@ p {
   width: 75%;
 }
 
-.toggle-wrapper .arrow {
-  background-color: var(--green-500);
-}
-
-.mobile-nav {
-  height: 100vh;
-}
-
 .mobile-nav a:not(:last-child) {
   margin-bottom: 2em;
 }
@@ -138,6 +98,11 @@ p {
   text-decoration: underline;
 }
 
+.nav-item:hover .icon-wrapper {
+  background: white;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 426px) {
   .mobile-nav-wrapper {
     max-width: 400px;
@@ -160,9 +125,10 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-  .nav {
+  .header-sidebar {
     display: none;
   }
+
   .toggle-wrapper {
     display: grid;
   }

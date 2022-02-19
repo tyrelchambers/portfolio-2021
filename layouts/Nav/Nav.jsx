@@ -1,38 +1,52 @@
+import {
+  faBook,
+  faBox,
+  faHouse,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import NavLink from "../../components/NavLink/NavLink";
 
 const Nav = () => {
   return (
-    <nav className="flex gap-6 nav">
+    <nav className="flex flex-col gap-6 nav border-[1px] border-gray-300 py-10 rounded-full bg-slate-50 p-2">
       <NavLink
         href="/"
-        className="text-white opacity-70 hover:opacity-100 transition-all"
+        className="text-slate-900 opacity-70 hover:opacity-100 transition-all nav-item flex flex-col items-center"
       >
-        Home
+        <span className="icon-wrapper h-8 w-8 flex justify-center items-center">
+          <FontAwesomeIcon icon={faHouse} />
+        </span>
+        <p className="text-xs  ">Home</p>
       </NavLink>
       <NavLink
         href="/about"
-        className="text-white opacity-70 hover:opacity-100 transition-all"
+        className="text-slate-900 opacity-70 hover:opacity-100 transition-all nav-item flex flex-col items-center"
       >
-        About
+        <span className="icon-wrapper h-8 w-8 flex justify-center items-center">
+          <FontAwesomeIcon icon={faUser} />
+        </span>
+        <p className="text-xs ">Me</p>
       </NavLink>
-      <NavLink
-        href="/services"
-        className="text-white opacity-70 hover:opacity-100 transition-all"
-      >
-        How I can help
-      </NavLink>
+
       <NavLink
         href="/blog"
-        className="text-white opacity-70 hover:opacity-100 transition-all"
+        className="text-slate-900 opacity-70 hover:opacity-100 transition-all nav-item flex flex-col items-center"
       >
-        Blog
+        <span className="icon-wrapper h-8 w-8 flex justify-center items-center">
+          <FontAwesomeIcon icon={faBook} />
+        </span>
+        <p className="text-xs  ">Blog</p>
       </NavLink>
       <NavLink
         href="/resources"
-        className="text-white opacity-70 hover:opacity-100 transition-all"
+        className="text-slate-900 opacity-70 hover:opacity-100 transition-all nav-item flex flex-col items-center"
       >
-        Resources
+        <span className="icon-wrapper h-8 w-8 flex justify-center items-center">
+          <FontAwesomeIcon icon={faBox} />
+        </span>
+        <p className="text-xs  ">Resources</p>
       </NavLink>
     </nav>
   );

@@ -6,7 +6,6 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
     "./blog/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },

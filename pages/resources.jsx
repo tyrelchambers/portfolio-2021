@@ -62,7 +62,7 @@ const resources = () => {
         <section className="mt-20">
           <div>
             <H3>Photography</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {photography.map((value, key) => (
                 <Tile data={value} key={key} icon={faCamera} />
               ))}
@@ -71,7 +71,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Tutorials</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {tutorials.map((data, key) => (
                 <Tile data={data} icon={faGraduationCap} key={key} />
               ))}
@@ -80,7 +80,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Code Resources</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {codeResources.map((data, key) => (
                 <Tile data={data} icon={faCode} key={key} />
               ))}
@@ -89,7 +89,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Source Control</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {sourceControl.map((data, key) => (
                 <Tile data={data} icon={faCloudUploadAlt} key={key} />
               ))}
@@ -98,7 +98,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Cheat Sheets</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {cheatSheets.map((data, key) => (
                 <Tile data={data} icon={faFile} key={key} />
               ))}
@@ -107,7 +107,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Colour Pickers</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {colourPickers.map((data, key) => (
                 <Tile data={data} icon={faPaintBrush} key={key} />
               ))}
@@ -116,7 +116,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Articles</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {articles.map((data, key) => (
                 <Tile data={data} icon={faBook} key={key} />
               ))}
@@ -125,7 +125,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Hosting</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {servers.map((data, key) => (
                 <Tile data={data} icon={faServer} key={key} />
               ))}
@@ -134,7 +134,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Communication</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {communication.map((data, key) => (
                 <Tile data={data} icon={faComments} key={key} />
               ))}
@@ -143,7 +143,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Design Software</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {designSoftware.map((data, key) => (
                 <Tile data={data} icon={faDesktop} key={key} />
               ))}
@@ -152,7 +152,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Project Management</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {projectManagement.map((data, key) => (
                 <Tile data={data} icon={faComments} key={key} />
               ))}
@@ -161,7 +161,7 @@ const resources = () => {
 
           <div className="mt-10">
             <H3>Books</H3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-list gap-4 mt-6">
               {books.map((data, key) => (
                 <Tile data={data} key={key} />
               ))}

@@ -14,7 +14,7 @@ const blog = ({ posts }) => {
   return (
     <Wrapper>
       <CommonHead title="Tyrel Chambers | Blog" />
-      <div className="flex items-center justify-between gap-6  mb-20">
+      <div className="flex items-center justify-between flex-col sm:flex-row gap-6  mb-20">
         <H1>Blog</H1>
         <input
           type="search"

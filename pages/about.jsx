@@ -15,7 +15,7 @@ const about = () => {
       <H1>Hey, I'm Tyrel Chambers 👋</H1>
 
       <div className=" mt-20  w-full">
-        <div className="flex flex-col sm:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-10">
           <img
             src="/me.jpg"
             alt=""

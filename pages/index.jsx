@@ -57,10 +57,10 @@ export default function Home({ posts }) {
       <section className=" w-full mt-20">
         <H2>What I've Done</H2>
 
-        <div className="grid grid-cols-3 mt-6 gap-4 gap-y-8 grid-list">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-6 gap-4 gap-y-8 grid-list">
           {projects.map((p) => (
             <div className="flex w-full" key={p.title}>
-              <div className="mt-6 flex">
+              <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start">
                 <img
                   src={p.thumbnail ? p.thumbnail : "/Asset 4.svg"}
                   alt={p.title}

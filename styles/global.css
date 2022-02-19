@@ -30,23 +30,11 @@ p {
 
 .toggle-wrapper {
   position: fixed;
-  top: 2.5em;
-  right: 2.5em;
+  top: 1em;
+  right: 1em;
   z-index: 99;
-  gap: 0.25em;
+  gap: 0.5em;
   transform: rotateZ(180deg);
-}
-
-.toggle-wrapper .dot {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-.toggle-wrapper.open .arrow {
-  background-color: var(--green-500) !important;
 }
 
 .toggle-wrapper .white {
@@ -80,14 +68,6 @@ p {
   left: 0px;
   top: 0;
   width: 75%;
-}
-
-.toggle-wrapper .arrow {
-  background-color: var(--green-500);
-}
-
-.mobile-nav {
-  height: 100vh;
 }
 
 .mobile-nav a:not(:last-child) {
@@ -145,9 +125,10 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-  .nav {
+  .header-sidebar {
     display: none;
   }
+
   .toggle-wrapper {
     display: grid;
   }

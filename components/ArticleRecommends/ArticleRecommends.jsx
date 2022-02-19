@@ -18,7 +18,7 @@ const ArticleRecommends = ({ articles }) => {
     <section className="max-w-screen-lg mt-8 w-full ml-auto mr-auto ">
       <p className="mb-4 text-lg font-bold">You might also enjoy...</p>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {state
           .filter((p) =>
             process.env.NODE_ENV !== "development"
@@ -28,7 +28,7 @@ const ArticleRecommends = ({ articles }) => {
 
           .map(({ frontmatter, slug }) => (
             <div
-              className="bg-gray-100 p-4 rounded-lg flex"
+              className="bg-gray-100 p-4 rounded-lg flex flex-col sm:flex-row"
               key={frontmatter.title}
             >
               {frontmatter.banner && (
